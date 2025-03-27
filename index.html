@@ -23,7 +23,17 @@
         <nav>
             <ul>
                 <li><a href="#about">About me</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="resume-viewer.html" target="_blank">Resume</a></li>
+
+                <script>
+                  function openResume(event) {
+                    event.preventDefault();
+                    window.open('assets/resume.pdf', '_blank', 'noopener,noreferrer');
+                    return false;
+                  }
+                </script>
+                
+
                 <li><a href="#work">Work</a></li>
             </ul>
         </nav>
@@ -378,7 +388,6 @@
 
   </div>
 </section>
-
 
   
 

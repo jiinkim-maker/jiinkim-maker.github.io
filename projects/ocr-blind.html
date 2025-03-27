@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧴 OCR for the Blind</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #2f3c2f;
+      color: #f0ebdb;
+      font-family: 'Caudex', serif;
+      padding: 40px;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #f9c74f;
+      margin-top: 40px;
+    }
+
+    .highlight {
+      color: #f9c74f;
+      font-weight: bold;
+    }
+
+    .tag {
+      background-color: #f0ebdb;
+      color: #333;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin-right: 8px;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    aside {
+      background-color: #3e4d3e;
+      padding: 15px 20px;
+      border-left: 4px solid #f9c74f;
+      margin-top: 20px;
+      font-style: italic;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧴 OCR for the Blind</h1>
+  <h2>Class Project | Biomedical Engineering [2023]</h2>
+
+  <h2>📌 Purpose</h2>
+  <p>
+    To support the visually impaired in identifying cosmetic products by reading textual information on product packaging and detecting harmful or desired ingredients using AI technology.
+  </p>
+
+  <h2>🛠 Technical Keywords</h2>
+  <span class="tag">OCR</span>
+  <span class="tag">RCNN</span>
+  <span class="tag">Text Detection</span>
+  <span class="tag">Biomedical AI</span>
+
+  <h2>📄 Description</h2>
+  <ul>
+    <li>Used OCR dataset of cosmetics and pharmaceuticals from AI Hub (image:json).</li>
+    <li>Performed EDA to analyze data distribution and characteristics, then defined appropriate preprocessing strategy.</li>
+    <li>Extracted label and bounding box data from JSON sources; applied text coordinate assignment for image cropping.</li>
+    <li>Constructed input datasets consisting of cropped image paths and corresponding label lists.</li>
+    <li>Defined and trained a custom RCNN model (not using any pretrained modules from Tensorflow/Keras/PyTorch).</li>
+    <li>Selected RCNN architecture with CNN for image encoding, RNN for sequential decoding, and fully connected layer for final OCR output.</li>
+    <li>Ran performance experiments and optimized model parameters.</li>
+  </ul>
+
+  <h2>🙋‍♀️ Role</h2>
+  <ul>
+    <li>Led the team and oversaw workflow and task assignment.</li>
+    <li>Handled all data preprocessing and modeling tasks.</li>
+    <li>Implemented CNN-based model, optimized hyperparameters, and validated performance.</li>
+  </ul>
+
+  <h2>🏆 Results</h2>
+  <ul>
+    <li>Achieved top score in class project ranking.</li>
+    <li>Final model Accuracy: <strong>70.06%</strong></li>
+  </ul>
+</body>
+</html>
