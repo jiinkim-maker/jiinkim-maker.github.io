@@ -1,0 +1,776 @@
+/* 전체 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #344c36;
+    color: #f7efe2;
+    scroll-behavior: smooth;
+}
+
+/* 네비게이션 바 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #344c36;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Shrikhand', cursive;
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.cta-button {
+    background-color: #feae17;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 80px;
+    font-family: 'Shrikhand', cursive;
+
+}
+
+/* 히어로 섹션 (PORTFOLIO) */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-text {
+    max-width: 600px; /* 문단이 너무 넓어지지 않도록 최대 너비 설정 */
+    text-align: left; /* 왼쪽 정렬 */
+    margin-left: 20px; /* 필요하면 위치 조정 가능 */
+    margin-top: 300px;
+}
+
+
+/* `.intro`는 실제 문단 스타일 */
+.intro {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ece1cf;
+    left: 50%;
+    margin-bottom: 70px;
+    max-width: 10000px; /* 가독성을 위해 문단의 최대 너비 설정 */
+}
+
+  
+/* 강조용 스타일 */
+.highlight {
+    color: #feae17; /* 🛠 노란색 적용 */
+    font-weight: bold;
+}
+  
+/* 배경 오버레이 */
+.background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #344c36;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+/* 메인 포트폴리오 텍스트 */
+.portfolio-title {
+    font-size: 90px;
+    font-family: 'Shrikhand', serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* 배경 TFOLIO 텍스트 */
+.portfolio-background-text {
+    font-size: 100px;
+    font-family: 'Shrikhand', serif;
+    color: transparent;
+    -webkit-text-stroke: 2px #feae17;
+    text-transform: uppercase;
+    position: absolute;
+    top: 29%;
+    right: 42%;
+    z-index: 1;
+    line-height: 1.0; 
+}
+
+/* 사진 및 텍스트 배치 */
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 460px;
+    height: 400px;
+    margin-right: 1px;
+    margin-left: 150px; /* 왼쪽 여백 추가하여 오른쪽으로 이동 */
+    z-index: 2;
+}
+
+.orange-overlay {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: #feae17;
+    z-index: 1;
+    left: -55px;
+    top: -15px;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 3;
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%); 
+    left: -55px;
+    top: 0px;
+}
+
+.info-box {
+    background-color: #344c36; /* 🛠 반투명한 네모 박스 */
+    padding: 10px 15px; /* 🛠 네모 박스 안 여백 */
+    border-radius: 2px; /* 🛠 네모 박스 모서리 둥글게 */
+    color: #ecddc6; /* 🛠 텍스트 색상 */
+    font-size: 13px; /* 🛠 텍스트 크기 */
+    font-family: 'Poppins', sans-serif; /* 🛠 폰트 적용 */
+    position: absolute;
+    top: 40%; /* 🛠 TFOLIO 글자 위로 배치 */
+    margin-left: 370px; /* 🛠 화면 오른쪽으로 정렬 */
+    z-index: 3; /* 🛠 TFOLIO 텍스트보다 위에 위치 */
+}
+
+.info-link {
+    color: inherit; /* 🛠 부모 요소의 기본 텍스트 색상과 동일하게 설정 */
+    text-decoration: none; /* 🛠 밑줄 제거 */
+    font-weight: normal; /* 🛠 기본 글씨 두께로 설정 */
+    cursor: pointer; /* 🛠 마우스를 올렸을 때 클릭 가능한 손가락 모양 유지 */
+}
+
+
+/* 스크롤 버튼 */
+.scroll-btn {
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #feae17;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #ece1cf;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 3;
+}
+
+/* 중간 검은색 배경 */
+.transition-section {
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    top: 95%;
+    z-index: 2;
+}
+
+/* 소개 섹션 */
+.about {
+    height: 100vh;
+    background: #ece1cf;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: #333;
+}
+
+.about h2 {
+    font-size: 50px;
+    font-family: 'Shrikhand', serif;
+    font-weight: lighter;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #feae17;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    position: relative; /* 🛠 Contact 창이 두 번째 섹션을 기준으로 배치되도록 설정 */
+    padding: 80px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-content {
+    max-width: 610px;
+    margin-right: 600px;
+    margin-top: 550px;
+    text-align: left;
+    font-size: large;
+}
+
+
+/* 🛠 Contact 박스를 감싸는 컨테이너 */
+.contact-container {
+    position: relative; /* 🛠 Contact 박스 위치 기준을 설정 (absolute 아님) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -250px;
+    right: -420px;
+}
+
+/* 🛠 Contact 박스 위에 배치할 요소 (이름, 국적 등) */
+.contact-badges {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+    top: 300px; /* 🛠 Contact 박스 위에 배치 */
+    left: -15%;
+    width: 100%;
+}
+
+.badge {
+    position: absolute;
+    background-color: #feae17; /* 🛠 노란색 배경 */
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: lighter;
+    z-index: 10;
+    top: -250px; /* 🛠 Contact 박스 위에 배치 */
+    left: 345px;
+    white-space: nowrap;
+}
+.badge2 {
+    position: absolute;
+    background-color: #feae17; /* 🛠 노란색 배경 */
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: lighter;
+    z-index: 10;
+    top: -5px; /* 🛠 Contact 박스 위에 배치 */
+    left: 4%;
+}
+
+
+/* 🛠 Contact 박스 */
+.contact-box {
+    position: relative;
+    width: 380px; /* 🛠 박스 크기 */
+    border-radius: 10px;
+    text-align: center;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* 🛠 내부 요소가 박스를 벗어나지 않도록 설정 */
+}
+
+/* 🛠 Contact 박스 상단 (녹색 배경) */
+.contact-header {
+    background-color: #344c36; /* 🛠 녹색 배경 */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 🛠 Contact 박스에 맞춤 */
+    height: 390px; /* 🛠 적절한 높이 설정 */
+    overflow: visible;
+}
+
+/* 🛠 Contact 박스 안의 프로필 이미지 */
+.contact-img {
+    width: 330px; /* 🛠 프로필 사진 크기 조정 */
+    height: 436px;
+    object-fit: cover;
+    border-radius: 1%; /* 🛠 원형 이미지 */
+    
+    position: absolute;
+    top: 250px; /* 🛠 Contact-header 박스보다 조금 튀어나오게 설정 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 🛠 정 중앙 정렬 */
+}
+
+/* 🛠 Contact 박스 하단 (검정색 배경) */
+.contact-content {
+    background-color: #000; /* 🛠 검정색 배경 */
+    width: 100%;
+    padding: 55px;
+    color: #fff;
+    font-family: "Caudex", serif;
+    height: 20%;
+}
+
+/* 🛠 Contact 텍스트 스타일 */
+.contact-text {
+    font-size: 22px;
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* 🛠 Skills 섹션 */
+.skills {
+    position: relative; /* 🛠 `.resume-background-text`가 섹션 내부에 위치하도록 설정 */
+    background-color: #344c36; /* 🛠 세 번째 페이지 배경색 */
+    padding: 100px 50px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+}
+
+/* 🛠 배경 텍스트 스타일 */
+.resume-background-text {
+    font-size: 88px;
+    font-family: 'Shrikhand', serif;
+    color: transparent;
+    -webkit-text-stroke: 2px #feae17;
+    text-transform: uppercase;
+    position: absolute;
+    top: -27%; /* 🛠 Skills 섹션 내에서 위치 조정 */
+    left: 73%;
+    transform: translateX(-50%); /* 🛠 가로 중앙 정렬 */
+    z-index: 1;
+    line-height: 1.0;
+    opacity: 0.4; /* 🛠 흐리게 표시하여 배경처럼 보이게 설정 */
+}
+
+.skills-content h2 {
+    font-family: 'Shrikhand', serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+/* 🛠 Education 섹션 (왼쪽 - 주황색 배경) */
+.education-section {
+    width: 40%;
+    padding: 30px;
+    border-radius: 10px;
+    color: #feae17;
+    text-align: left;
+    margin-top: -90px;
+}
+
+.education-title{
+    font-size: 48px;
+    font-weight:400;
+    font-style: italic; /* 🛠 기울임 적용 */
+    font-family: "Shrikhand", serif; /* 🛠 원하는 폰트 적용 */
+
+}
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+/* 🛠 연도(year) 스타일 */
+.education-list .year {
+    font-family: "Shrikhand", sans-serif; /* 🛠 Poppins 폰트 적용 */
+    font-size: 27px; /* 🛠 글씨 크기 */
+    font-weight: lighter; /* 🛠 굵게 */
+    color: white; /* 🛠 흰색 */
+    font-style: normal; /* 🛠 기울임 적용 */
+    margin-right: 10px; /* 🛠 오른쪽 여백 추가 */
+}
+
+/* 🛠 학교 이름(school) 스타일 */
+.education-list .school {
+    font-family: "Caudex", serif; /* 🛠 Caudex 폰트 적용 */
+    font-size: 20px; /* 🛠 글씨 크기 */
+    font-weight: bold; /* 🛠 굵게 */
+    color: white; /* 🛠 주황색 */
+    display: block; /* 🛠 줄바꿈 효과 */
+    margin-top: 3px; /* 🛠 연도(year)와 간격 추가 */
+}
+
+/* 🛠 전공(major) 스타일 */
+.education-list .major {
+    font-family: "Caudex", serif; /* 🛠 Caudex 폰트 적용 */
+    font-size: 16px; /* 🛠 글씨 크기 */
+    color: #ccc; /* 🛠 밝은 회색 */
+    display: block; /* 🛠 줄바꿈 효과 */
+    margin-top: 3px; /* 🛠 학교 이름(school)과 간격 추가 */
+}
+
+
+
+
+/* 🛠 Technical Skills 섹션 (오른쪽 - 보라색 강조) */
+.technical-skills {
+    width: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight:400;
+    font-family: "Shrikhand", serif; /* 🛠 원하는 폰트 적용 */
+    color: #feae17;
+    font-style: italic; /* 🛠 기울임 적용 */
+}
+
+/* 🛠 Skill 카테고리 제목 */
+.skills-category h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+}
+
+/* 🛠 기술 아이콘 스타일 */
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icon {
+    background-color: #222;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+/* 🛠 Additional Skills 버튼 스타일 */
+.additional-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-btn {
+    background-color: #222;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.skill-btn:hover {
+    background-color: #feae17;
+    color: black;
+}
+
+/* 🛠 Experience 섹션 전체 스타일 */
+.experience-section {
+    background-color: #feae17; /* 🛠 노란색 배경 */
+    padding: 40px;
+    border-radius: 20px;
+    color: black;
+    line-height: 1.9; /* 🛠 줄 간격 조정 (사진처럼) */
+    margin-top: -550px; /* 🛠 Education과 자연스럽게 연결 */
+    margin-left: 75px;
+    position: relative;
+    left: 0; /* 🛠 화면의 가장 왼쪽에 배치 */
+    width: 25%; /* 🛠 화면의 절반 크기로 설정 */
+}
+.experience-header {
+    display: flex;
+    align-items: center;
+    gap: 17px; /* 🛠 year, position, toggle-btn 사이 간격 넓힘 */
+}
+
+/* 🛠 Experience 제목 스타일 */
+.experience-title {
+    font-size: 28px;
+    font-family: "Shrikhand", serif;
+    font-weight: lighter;
+    color: black;
+    margin-top: 0px; /* 🛠 제목 위쪽 여백 제거 */
+}
+
+/* 🛠 Experience 리스트 스타일 */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    line-height: 3; /* 🛠 줄 간격 조정 (사진처럼) */
+    padding-top: 10px; /* 🛠 기존보다 여백 줄이기 */
+}
+
+/* 🛠 개별 Experience 아이템 */
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative; 
+    flex-direction: column; /* 🛠 요소들을 세로로 배치 */
+    width: 100%;
+}
+
+/* 🛠 연도 스타일 */
+.experience-item .year {
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: "Shrikhand", serif;
+}
+
+/* 🛠 포지션 스타일 */
+.experience-item .position {
+    font-weight: lighter;
+    font-size: 17px;
+    color: black;
+    display: block;
+    line-height: 1.5; /* 🛠 줄 간격 조정 (사진처럼) */
+    font-family: "Shrikhand", serif;
+    position: relative; /* 🛠 Experience 박스 내부에서 위치 고정 */
+}
+
+
+/* 🛠 Experience 태그 스타일 */
+.experience-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 45px;
+    margin-left: -12px;
+}
+
+.tag {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+/* 🛠 숨겨진 설명 스타일 */
+.description {
+    display: none; /* 🛠 기본적으로 숨김 */
+    background-color: #ece1cf; /* 🛠 흰색 배경 */
+    color: #000000; /* 🛠 글자 색 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: smaller;
+    height: auto;
+    margin-top: 5px;
+    width: 100%; /* 🛠 Experience 박스 안에 꽉 차게 */
+    position: relative; 
+    transition: all 0.3s ease-in-out;
+    line-height: 1.7; /* 🛠 줄 간격 조정 (사진처럼) */
+    text-align: left; /* 🛠 왼쪽 정렬 */
+
+}
+
+/* 🛠 토글 버튼 스타일 */
+.toggle-btn {
+    background-color: #344c36; /* 🛠 초록색 */
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 13px;
+    align-self: flex-start; /* 🛠 왼쪽 정렬 */
+
+    font-family: "poppins", serif; /* 🛠 Caudex 폰트 적용 */
+
+}
+.toggle-btn:hover {
+    background-color: #2a3c2a;
+}
+
+/* 🛠 리스트 스타일 */
+.description ul {
+    padding-left: 20px; /* 🛠 리스트 들여쓰기 */
+    margin: 0;
+}
+
+.description li {
+    margin-bottom: 10px; /* 🛠 리스트 아이템 간격 조정 */
+    font-size: 14px; /* 🛠 글자 크기 조정 */
+    font-weight: normal;
+}
+
+
+.activities-section {
+    padding: 80px 0;
+    left: 100px;
+    background-color: #2d3e2e;
+    overflow-x: hidden;
+  }
+  
+  .activities-title {
+    font-size: 48px;
+    color: #feae17;
+    font-family: "Shrikhand", cursive;
+    font-weight:400;
+    font-style: italic; /* 🛠 기울임 적용 */
+    margin-left: 80px;
+  }
+  
+  
+  .album-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+    margin-left: 5%;
+  }
+
+  .activity-card {
+    width: 250px;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: "Caudex", serif;
+  }
+  
+  .activity-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .activity-card img:hover {
+    transform: scale(1.05);
+  }
+  
+  .activity-title {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f5f0e1;
+  }
+  
+
+  .projects-section {
+    margin-top: 100px;
+    padding: 40px;
+  }
+  
+  .projects-title {
+    font-family: "Shrikhand", serif;
+    font-size: 48px;
+    color: #feae17;
+    margin-bottom: 40px;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    width: 280px;
+    background-color: #ece1cf;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+  
+  .project-card h3 {
+    font-family: "Caudex", serif;
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+  
+  .project-sub {
+    font-size: 14px;
+    font-family: "Caudex", serif;
+    color: #444;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  
+  .tag {
+    font-family: "Caudex", serif;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .tag.green { background-color: #d4eac7; }
+  .tag.pink { background-color: #e8c4d8; }
+  .tag.beige { background-color: #f0e0cb; }
+  .tag.blue { background-color: #c7d7f3; }
+  .tag.red { background-color: #f5d1cc; }
+  .tag.yellow { background-color: #ede2a6; }
+  .tag.brown { background-color: #dbc2a2; }
+  

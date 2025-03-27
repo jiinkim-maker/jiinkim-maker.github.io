@@ -1,11 +1,380 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinny's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Shrikhand&family=Caudex:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1>안녕하세요, 저는 [본인 이름]입니다.</h1>
-  <p>여기에 자기소개, 프로젝트, 연락처 등을 작성하세요.</p>
+    <!-- 상단 네비게이션 바 -->
+    <header>
+        <h1 class="logo">Jinny</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#work">Work</a></li>
+            </ul>
+        </nav>
+        <a href="https://calendar.app.google/Q7WjXqM1gBCfotgf6" class="cta-button" target="_blank">Get in touch!</a>
+    </header>
+
+    <!-- 첫 번째 화면 (PORTFOLIO 섹션) -->
+    <section class="hero">
+        <div class="background-overlay"></div>
+
+        <h2 class="portfolio-title">PORTFOLIO</h2> <!-- 🛠 'PORTFOLIO' 텍스트 위치 수정 -->
+        <h3 class="portfolio-background-text">Page<br><br></h3> <!-- 🛠 'TFOLIO' 텍스트 위치 수정 -->
+        <div class="info-box">
+          <h3>Links</h3>
+          <p><a href="https://github.com/jiinkim-maker" class="info-link" target="_blank">GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/jiin-kim-1928b331a/" class="info-link" target="_blank">LinkedIn</a></p>  
+        </div>
+            
+        <div class="hero-layout">
+            
+            <div class="hero-text">
+              <p class="intro">
+                I’m a <span class="highlight">data enthusiast</span> with hands-on experience<br>
+                in understanding data, preprocessing,and ML/DL modeling. </br>
+                I’ve applied my technical skills through <span class="highlight">real-world IT projects,</span> </br>
+                from web/app development to AI implementation, driving practical, human-centered solutions.
+
+              </p>
+            </div>
+        </div>
+
+        <a href="#scroll-target" class="scroll-btn">Scroll Down</a>
+    </section>
+
+    <!-- 검은색 배경 (스크롤 효과) -->
+    <section class="transition-section">
+        <div id="scroll-target"></div> <!-- 🛠 검은색 배경 확장 -->
+    </section>
+
+    <!-- 두 번째 화면 (ABOUT 섹션) -->
+    <section id="about" class="about">
+      <div class="about-content">
+        <h2>Hello, I'm Jinny!</h2>
+        <p>Through professional work, various projects, and academic training, I’ve built a well-rounded skill set.</p>
+        <p>I’m prepared to make a noticeable impact on your projects.<p>
+        <a href="https://linkedin.com" class="linkedin-btn">📌 Visit my LinkedIn</a>
+      </div>
+        <!-- 🛠 Contact 창 추가 (두 번째와 세 번째 화면을 걸쳐 배치) -->
+        <div class="contact-container">
+        <!-- 🛠 Contact 위에 추가할 요소 -->
+        <div class="contact-badges">
+            <span class="badge">28th Feb 2002</span>
+            <span class="badge2">Korean</span>
+        </div>
+          
+        <!-- 🛠 Contact 박스 -->
+        <div class="contact-box">
+            <div class="contact-header">
+                <img src="images/profile_icon.png" alt="Profile Image" class="contact-img">
+            </div>
+            <div class="contact-content">
+                <h3 class="contact-text">Contact</h3>
+                <p>📍 Ansan, Korea</p>
+                <p>📧 <a href="mailto:020228jinny@gmail.com" class="info-link">020228jinny@gmail.com</a></p>
+                <p>📞 010 3874 5466</p>
+            </div>
+          </div>
+        </div>
+     </section>
+
+
+    <section id="skills" class="skills">
+      <h2 class="resume-background-text">RESUME<br>RESUME<br>RESUME</h2>
+      
+      <section class="education-section">
+        <h2 class="education-title">Education</h2>
+    
+        <ul class="education-list">
+            <li>
+                <span class="timeline"></span> <!-- 🛠 세로 라인 -->
+                <span class="diamond">🔶</span> 
+                <span class="year">2017.03 - 2020.01</span>
+                <span class="school">Ansan High-school, Korea</span>
+                <span class="major"></span>
+            </li>
+            <li>
+                <span class="timeline"></span>
+                <span class="diamond">🔶</span> 
+                <span class="year">2020.03 - 2025.02</span>
+                <span class="school">Hankuk University of Foriegn Studies(HUFS)</span>
+                <span class="major">B.S Biomedical Engineering / business administration</span>
+            </li>
+        </ul>
+      </section>
+    
+
+    <!-- 🛠 오른쪽: Technical Skills 섹션 -->
+      <div class="technical-skills">
+        <h2 class="section-title">Technical skills</h2>
+
+        <!-- 🛠 Software Skills -->
+      <div class="skills-category">
+        <h3>Software Skills</h3>
+        <div class="skill-icons">
+          <span class="icon">📝 Notion</span>
+          <span class="icon">🏢 MS Office</span>
+          <span class="icon">🗄️ SQL</span>
+          <span class="icon">📊 Google Analytics</span>
+          <span class="icon">📈 Tableau</span>
+        </div>
+      </div>
+
+         <!-- 🛠 Coding Skills -->
+      <div class="skills-category">
+        <h3>Coding skills</h3>
+        <p>Basic knowledge of:</p>
+          <div class="skill-icons">
+            <span class="icon">🐍 Python</span>
+            <span class="icon">🔥 PyTorch</span>
+            <span class="icon">📚 TensorFlow</span>
+            <span class="icon">💻 C</span>
+            <span class="icon">📏 R</span>
+            <span class="icon">🟨 JavaScript</span>
+            <span class="icon">🏗️ HTML5</span>
+            <span class="icon">🎨 CSS3</span>
+            <span class="icon">📱 React Native</span>
+            <span class="icon">🌿 Node.js</span>
+            <span class="icon">🛢️ MySQL</span>
+        </div>
+      </div>
+
+      <!-- 🛠 Additional Skills (Buttons) -->
+      <div class="skills-category">
+        <h3>Expertise</h3>
+        <div class="skill-icons">
+            <span class="icon">📂 Project Management</span>
+            <span class="icon">🤝 Collaborative Work</span>
+            <span class="icon">🏥 Biomedical Engineering</span>
+            <span class="icon">🤖 Machine Learning</span>
+            <span class="icon">🔬 Deep Learning Modeling</span>
+            <span class="icon">📊 Statistical Analysis</span>
+            <span class="icon">🎨 UI/UX Design</span>
+        </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Tools</h3>
+      <div class="skill-icons">
+          <span class="icon">🖥️ VSCode</span>
+          <span class="icon">🚀 Firebase</span>
+          <span class="icon">🔴 Git</span>
+          <span class="icon">📦 Expo</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section">
+    <h2 class="experience-title">Experience</h2>
+
+    <div class="experience-container">
+      <div class="experience-item">
+        <div class="experience-header">
+          <span class="diamond">🔶</span> 
+          <span class="year">2020</span>
+          <span class="position">Private Tutor</span>
+          <button class="toggle-btn" onclick="toggleDescription('desc3')">Description</button>
+        </div>
+
+        <div id="desc3" class="description">
+          <ul>
+            <li>Provided personalized, one-on-one tutoring <b>over 4 years</b> to high school students preparing for college entrance exams.</li>
+            <li><b>Personalized Learning Strategies:</b> Provided one-on-one tutoring with tailored study plans based on individual learning styles and goals.</li>
+            <li><b>Multi-Subject Expertise:</b> Taught Math, Science, English, and Korean, adapting instruction to meet diverse academic needs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <span class="diamond">🔶</span> 
+          <span class="year">2021</span>
+          <span class="position">English Instructor</span>
+          <button class="toggle-btn" onclick="toggleDescription('desc4')">Description</button>
+        </div>
+
+        <div id="desc4" class="description">
+          <ul>
+            <li>Worked as an English Instructor on a two-month contract, teaching specialized English courses for college entrance exams.</li>
+            <li><b>Curriculum Development & Instruction:</b> Designed and delivered structured lessons, breaking down complex concepts for high school students.</li>
+            <li><b>Group Teaching & Engagement:</b> Led interactive classes, applying effective learning strategies to enhance student comprehension and participation.</li>
+          </ul>
+        </div>
+      </div>
+    
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="diamond">🔶</span> 
+            <span class="year">2023</span>
+            <span class="position">Data/Marketing Intern</span>
+            <button class="toggle-btn" onclick="toggleDescription('desc1')">Description</button>
+          </div>
+
+          <div id="desc1" class="description">
+            <ul>
+              <li>Interned for six months at <a href="https://www.wellysis.com" target="_blank" class="company-link">Wellysis Corp.</a></li>
+              <li><b>Data Accuracy & Curation:</b> Ensured high-quality data by supporting data structuring, cleaning, and validation processes.</li>
+              <li><b>Marketing Intelligence:</b> Collected market trends and compiled reports for strategic insights.</li>
+              <li><b>Data Management & Analysis:</b> Managed the customer database and internal diagnostic project data by utilizing Excel and internal software to oversee subscription information, track expiration timelines, and report key updates. Additionally, supported statistical analysis and automation tasks to enhance operational efficiency.</li>
+            </ul>
+          </div>
+        </div>
+      
+      
+        <div class="experience-item">
+          <div class="experience-header">
+            <span class="diamond">🔶</span> 
+            <span class="year">2024</span>
+            <span class="position">Clinical-Data Freelancer</span>
+            <button class="toggle-btn" onclick="toggleDescription('desc2')">Description</button>
+          </div>
+          <div id="desc2" class="description">
+            <ul>
+              <li>Worked with <a href="https://www.wellysis.com" target="_blank" class="company-link">Wellysis Corp.</a> as a freelance contractor.</li>
+              <li><b>Data Quality & Curation Specialist:</b> Performed data curation, quality assurance, and annotation to enhance the accuracy and reliability of DL models.</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="experience-tags">
+        <span class="tag"># Accomplishment</span>
+        <span class="tag"># Communication</span>
+        <span class="tag"># Detail-oriented</span>
+    </div>
+ </section>
+
+ <section class="activities-section">
+  <h2 class="activities-title">My Activities</h2>
+  <div class="album-carousel">
+    <div class="activity-card">
+      <a href="activities/gbt-hackathon.html">
+        <img src="images/cloud.jpg" alt="GBT Hackathon Challenge" />
+        <div class="activity-title">🏗️ GBT Hackathon Challenge</div>
+      </a>
+    </div>
+
+    <div class="activity-card">
+      <a href="activities/kr-buddy.html">
+        <img src="images/cloud.jpg" alt="KR BUDDY Volunteer" />
+        <div class="activity-title">🌐 KR BUDDY Volunteer</div>
+      </a>
+    </div>
+
+    <div class="activity-card">
+      <a href="activities/public-welfare.html">
+        <img src="images/cloud.jpg" alt="Public Welfare Campaign" />
+        <div class="activity-title">🎁 Public Welfare Campaign</div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="projects-section">
+  <h2 class="projects-title">My Projects</h2>
+  <div class="projects-grid">
+    
+    <div class="project-card">
+      <a href="projects/disaster-detection.html">
+        <img src="images/monitor.jpg" alt="Disaster Detection">
+        <h3>Integration of RGB and FIR Images</h3>
+        <p class="project-sub">Biomedical Engineering</p>
+        <div class="tags">
+          <span class="tag green">Computer Vision</span>
+          <span class="tag pink">Data Preprocessing</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <a href="projects/kfood-classifier.html">
+        <img src="images/monitor.jpg" alt="K-Food AI">
+        <h3>AI that Understands Food Images</h3>
+        <p class="project-sub">Multi-class classification using K-food datasets</p>
+        <div class="tags">
+          <span class="tag beige">ML/DL</span>
+          <span class="tag blue">EDA</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <a href="projects/sketch-search.html">
+        <img src="images/monitor.jpg" alt="Illustration AI">
+        <h3>Sketch Image Search AI</h3>
+        <p class="project-sub">Multi-class Classification, Object Detection</p>
+        <div class="tags">
+          <span class="tag beige">ML/DL</span>
+          <span class="tag blue">EDA</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <a href="projects/ocr-blind.html">
+        <img src="images/monitor.jpg" alt="OCR for the Blind">
+        <h3>OCR Deep Learning for the Blind</h3>
+        <p class="project-sub">Text Recognition using CRNN</p>
+        <div class="tags">
+          <span class="tag beige">ML/DL</span>
+          <span class="tag pink">Data Preprocessing</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <a href="projects/asl-model.html">
+        <img src="images/monitor.jpg" alt="ASL Model">
+        <h3>ASL Deep Learning Model</h3>
+        <p class="project-sub">BME Artificial Intelligence</p>
+        <div class="tags">
+          <span class="tag beige">ML/DL</span>
+          <span class="tag pink">Data Preprocessing</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <a href="projects/seoul-subway.html">
+        <img src="images/monitor.jpg" alt="Seoul Subway">
+        <h3>Seoul Subway Congestion Map</h3>
+        <p class="project-sub">Data Visualization using R</p>
+        <div class="tags">
+          <span class="tag red">Data Visualization</span>
+          <span class="tag yellow">Data Analysis</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <a href="projects/oil-condition.html">
+        <img src="images/monitor.jpg" alt="Oil Condition AI">
+        <h3>Real-time Oil Condition Assessment</h3>
+        <p class="project-sub">Random Forest, Feature Selection</p>
+        <div class="tags">
+          <span class="tag beige">ML/DL</span>
+          <span class="tag brown">Data-Driven Project Planning</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  
+
+<script src="script.js"></script>
+
 </body>
 </html>
